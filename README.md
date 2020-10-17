@@ -1,81 +1,44 @@
-# Webpack Intro
+# FLI 
+Styling application that puts together a collection of 4 cards of different outfits that will create outfits , each card will flip and show where the article of clothing is from. 
+we will have. 
+ - OOTW (outfit of the week)
+ - FGOTW (FLI guy of the week)
 
-[See Live Demo](https://webpack-temp.netlify.app/)
+## The Motivation
+Friend is a very stylsh, was showing me the collection cards that he makes on his phone taking different articles of clothing and making an outfit out of it and saving it to his phone. I figured I could create this in a mobile app and It would be a fun challenging project. 
 
-Webpack is a task runner and a module bundler. It originally started as a module bundler. This means that it takes all of your separate Javascript modules and bundles them together into a single file. Webpack also automates some of the tasks that we have to run every time we change the code. It will automate these tasks so that we are not typing in the same commands every single time.
+## Build Status
+Building
 
-- Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
-- [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-2-patterns-and-tools/chapters/webpack-configure.md)
+## Site Link
 
-## Get Started
 
-### Use Template
-#### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
-![Use this Template](./documentation/usetemplate.png)
+## Code Style
+We are using webpack with Eslintrc with Airbnb strict rules
 
-#### 2. Make sure YOUR github account is selected in the dropdown and name your project
-![Create Project](./documentation/createproject.png)
+## Screenshots
+N/A
 
-3. Click the **GREEN** "Create repository from template" button
-4. Clone your new repo to your local machine
-5. Start working!
+## Tech/Framework
+Javascript Es6, Sass, HTML5
 
-## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. To start your application, run `npm start`
+## Features
+* Authenticate to perform any actions (CUD)
+* 4 cards that create outfit
+* 4 cards that create FLI GUY
+* Cards will flip and tell you places to get outfits from 
+* Only admin can add cards 
 
-### If you see this, you are set to go!
-![LIT](./documentation/lit-screen.png)
 
-**NOTE:** Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
+## Code Example
+N/A
 
-## Other Important Tidbits
-### Console messages
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. This means that the use of `console.log` is acceptable **_(debugger is WAY better though)_** while developing, but will throw a warning in your console like the image below, but all `logs` will have to be removed. You may use `console.error` and `console.warn` in your code however.
+## ERD
 
-![not acceptable](./documentation/notacceptable.png)
 
-### Including Images with Webpack
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
+## Wireframe
 
-```js
-import cat from './assets/cat.jpg';
 
-let domString = `<img src=${cat} alt="picture of a cat"/>`;
+## Contributors
+* [Jonathon Joyner](https://github.com/Jonathon22)
 
-document.getElementById('cat').innerHTMl = domString;
-```
-
-### Importing CSS/SCSS
-```js
-import '../styles/main.scss';
-
-const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
-};
-
-init();
-```
-
-### Using Axios
-> For every file you will need to make an XHR request in, you will need to require Axios
-```js
-import axios from 'axios';
-
-const examplePromise = () => {
-  axios.get('http://localhost:3001/example')
-    .then((data) => {
-      console.warn(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
-```
-
-### Deploying on Netlify
-
-- Build Command: `npm run build`
-- Publish directory: `build`
