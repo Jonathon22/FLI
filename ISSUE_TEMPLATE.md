@@ -2,7 +2,7 @@
 <!--- DELETE ALL COMMENTS BEFORE CREATING ISSUE -->
 
 # User Story
-<!-- Write a description of what the user should see and experience based on THIS ticket -->
+<!-- Write an description of what the user should see and experience based on THIS ticket -->
 
 # Acceptance Criteria
 <!-- The Acceptance Criteria of a User Story consists of a set of Test Scenarios that are to be met to confirm that the software is working as expected. The Acceptance Criteria illustrates the scope of the individual ticket and expectations from the team and client. -->
